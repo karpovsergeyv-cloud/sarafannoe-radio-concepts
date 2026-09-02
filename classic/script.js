@@ -64,17 +64,6 @@
     });
   }
 
-  const channelFeedback = document.querySelector("[data-channel-feedback]");
-  const pendingChannels = document.querySelectorAll("[data-pending-channel]");
-
-  pendingChannels.forEach((button) => {
-    button.addEventListener("click", () => {
-      if (!channelFeedback) return;
-      const channel = button.dataset.pendingChannel || "мессенджер";
-      channelFeedback.textContent = `Ссылка на ${channel} ожидает подтверждения.`;
-    });
-  });
-
   const requestForm = document.querySelector("[data-request-form]");
 
   if (!requestForm) return;

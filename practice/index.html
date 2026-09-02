@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#073f35">
+  <meta name="theme-color" content="#4a2e24">
   <meta name="description" content="Агентство по подбору домашнего персонала «Сарафанное радио». Подбор для семей Москвы и Московской области, очное обучение в Красногорске.">
   <link rel="icon" href="data:,">
   <title>Сарафанное радио | Подбор домашнего персонала</title>
@@ -21,15 +21,7 @@
   <header class="site-header" data-header>
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Сарафанное радио, в начало страницы">
-        <svg class="brand-mark" viewBox="0 0 64 52" role="img" aria-label="Знак с силуэтом сороки">
-          <path d="M9 38 31 27l8 7-26 11Z" fill="currentColor"/>
-          <ellipse cx="35" cy="25" rx="13" ry="11" fill="currentColor"/>
-          <circle cx="43" cy="14" r="8" fill="currentColor"/>
-          <path d="m50 13 11 4-11 3Z" fill="#b98b32"/>
-          <path d="M29 22c4 0 8 2 10 6-5 4-11 5-17 2 1-4 3-7 7-8Z" fill="#f3f0e7"/>
-          <circle cx="45" cy="12" r="1.5" fill="#f3f0e7"/>
-          <path d="M33 35v9m8-11v11M29 44h8m0 0h8" fill="none" stroke="#b98b32" stroke-width="1.6" stroke-linecap="square"/>
-        </svg>
+        <img class="brand-mark" src="../shared/assets/logo-magpie-v2.svg" alt="" width="260" height="128">
         <span class="brand-copy">
           <span class="brand-name">Сарафанное радио</span>
           <span class="brand-kind">домашний персонал</span>
@@ -139,11 +131,23 @@
             <h3>Сиделки</h3>
             <p>Бытовая помощь и внимание к близкому человеку.</p>
           </article>
+          <article class="personnel-cell personnel-wardrobe">
+            <h3>Специалисты по VIP-гардеробу</h3>
+            <p>Уход, хранение и организация личного гардероба.</p>
+          </article>
+          <article class="personnel-cell personnel-manager">
+            <h3>Управляющие домом</h3>
+            <p>Координация бытовых процессов и работы домашнего персонала.</p>
+          </article>
+          <article class="personnel-cell personnel-assistant">
+            <h3>Личные помощники</h3>
+            <p>Организационная помощь в повседневных и деловых задачах.</p>
+          </article>
         </div>
 
         <aside class="agreement-note" aria-label="Статус текста категорий">
           <strong>Контент на согласовании</strong>
-          <p>Нужно подтвердить описания задач для всех семи категорий, особенно границы услуг сиделки. Медицинская помощь не заявляется.</p>
+          <p>Уточняются границы обязанностей новых категорий и формулировка роли управляющего. Медицинская помощь сиделок не заявляется.</p>
         </aside>
       </div>
     </section>
@@ -255,27 +259,26 @@
       </figure>
       <div class="applicants-copy">
         <h2 id="applicants-title">Ищете работу в семье?</h2>
-        <p>Мы работаем с соискателями со всей России. Актуальные вакансии публикуем в WhatsApp, MAX и Telegram.</p>
+        <p>Работаем с соискателями со всей России. Актуальные вакансии и объявления для кандидатов публикуем в каналах агентства — выберите удобный мессенджер.</p>
         <div class="applicant-actions">
-          <a class="button button-light" href="#job-channels">Ищу работу</a>
+          <a class="button button-light" href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Смотреть вакансии</a>
           <a class="text-link text-link-light" href="#training">Узнать об обучении</a>
         </div>
 
         <div class="channel-list" id="job-channels" aria-label="Каналы с вакансиями">
-          <button type="button" class="channel-button" data-pending-channel="WhatsApp">
-            <span>WhatsApp</span>
-            <small>Ссылка ожидает подтверждения</small>
-          </button>
-          <button type="button" class="channel-button" data-pending-channel="MAX">
-            <span>MAX</span>
-            <small>Ссылка ожидает подтверждения</small>
-          </button>
-          <button type="button" class="channel-button" data-pending-channel="Telegram">
+          <a class="channel-button" href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">
             <span>Telegram</span>
-            <small>Ссылка ожидает подтверждения</small>
-          </button>
+            <small>Смотреть вакансии</small>
+          </a>
+          <a class="channel-button" href="https://chat.whatsapp.com/GwtRLOzeSSE7Fm2NH6aEcG?mode=gi_t" target="_blank" rel="noopener noreferrer">
+            <span>WhatsApp</span>
+            <small>Вступить в группу</small>
+          </a>
+          <a class="channel-button" href="https://max.ru/join/-CKrZp5wTq_5JCO9bxmaWdAWbNVkxUxnjhgfsiWYDFM" target="_blank" rel="noopener noreferrer">
+            <span>MAX</span>
+            <small>Перейти в канал</small>
+          </a>
         </div>
-        <p class="channel-feedback" data-channel-feedback role="status" aria-live="polite">Выберите удобный канал.</p>
       </div>
     </section>
 
@@ -283,27 +286,37 @@
     <section class="section about-section" id="about" aria-labelledby="about-title">
       <div class="section-shell">
         <div class="about-intro">
-          <h2 id="about-title">Люди, к которым вы обращаетесь</h2>
-          <p>Подбор домашнего персонала требует личного разговора и ответственности. Здесь мы покажем людей, которые принимают заявку, знакомятся с кандидатами и сопровождают клиента.</p>
+          <h2 id="about-title">Люди, с которыми вы будете на связи</h2>
+          <p>Подбор домашнего персонала начинается с личного разговора. Нам важно понять не только формальные требования, но и особенности семьи, будущие задачи специалиста и ожидания обеих сторон.</p>
         </div>
 
         <div class="about-mosaic">
           <figure class="about-photo">
-            <img src="../shared/assets/office-review-distinct.png" width="1448" height="1086" alt="Демонстрационное изображение встречи в офисе" loading="lazy" decoding="async">
-            <figcaption>Демонстрационное изображение</figcaption>
+            <img src="../shared/assets/team-maryana-pitchuk-provided.png" width="864" height="1280" alt="Питчук Марьяна Ярославовна" loading="lazy" decoding="async">
+            <figcaption><strong>Питчук Марьяна Ярославовна</strong><span>Основатель агентства «Сарафанное радио»</span><small>Фото предоставлено агентством</small></figcaption>
           </figure>
 
-          <article class="about-pending">
-            <strong>Контент на согласовании</strong>
-            <h3>Команда и история</h3>
-            <p>Имя руководителя, история агентства и роли команды будут добавлены после подтверждения.</p>
-            <p>Отзывы не публикуются без исходников и разрешения.</p>
-          </article>
+          <figure class="about-partner">
+            <img src="../shared/assets/team-partner-provided.png" width="544" height="544" alt="Коваленко Зинаида Александровна" loading="lazy" decoding="async">
+            <figcaption><strong>Коваленко Зинаида Александровна</strong><span>Партнёр агентства</span><small>Фото предоставлено агентством</small></figcaption>
+          </figure>
 
           <figure class="certificate-figure">
             <img src="../shared/assets/certificate-reference.png" width="2105" height="1489" alt="Предоставленный макет сертификата с фирменным мотивом" loading="lazy" decoding="async">
             <figcaption>Предоставленный макет сертификата</figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="referral-section" aria-labelledby="referral-title">
+      <div class="section-shell referral-layout">
+        <p class="referral-label">Рекомендательная программа</p>
+        <p class="referral-value" aria-label="Десять тысяч рублей">10 000 ₽</p>
+        <div class="referral-copy">
+          <h2 id="referral-title">Порекомендуйте нас — получите вознаграждение</h2>
+          <p>Если по вашей рекомендации к нам обратится работодатель и агентство закроет его заявку, мы выплатим вам 10 000 ₽.</p>
+          <small>Условия участия и порядок фиксации рекомендации уточняются.</small>
         </div>
       </div>
     </section>
@@ -326,6 +339,18 @@
             </h3>
             <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
               <p>Для заказчиков мы работаем по Москве и Московской области.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                <span>Как работает бонус за рекомендацию?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
+              <p>Если по вашей рекомендации обратится работодатель и агентство закроет его заявку, вы получите 10 000 ₽. Подробные правила участия сейчас уточняются.</p>
             </div>
           </article>
 
@@ -411,6 +436,9 @@
               <option value="gardener">Садовника</option>
               <option value="couple">Семейную пару</option>
               <option value="carer">Сиделку</option>
+              <option value="wardrobe">Специалиста по VIP-гардеробу</option>
+              <option value="manager">Управляющего домом</option>
+              <option value="assistant">Личного помощника</option>
             </select>
             <p class="field-error" id="role-error" data-error-for="request-role" aria-live="polite"></p>
           </div>
@@ -441,11 +469,29 @@
             <span>Красногорск, Ильинское шоссе, д. 16</span>
             <span>+7 (___) ___-__-__</span>
           </address>
+          <nav class="contact-channel-links" aria-label="Каналы с вакансиями">
+            <span>Каналы вакансий:</span>
+            <a href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://chat.whatsapp.com/GwtRLOzeSSE7Fm2NH6aEcG?mode=gi_t" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://max.ru/join/-CKrZp5wTq_5JCO9bxmaWdAWbNVkxUxnjhgfsiWYDFM" target="_blank" rel="noopener noreferrer">MAX</a>
+          </nav>
           <div class="contacts-pending">
-            <strong>Контент на согласовании</strong>
-            <p>Контакты, мессенджеры, email и реквизиты ожидают подтверждения.</p>
+            <strong>Контакты уточняются</strong>
+            <p>Рабочий телефон и email будут добавлены после подтверждения.</p>
             <p>Политика конфиденциальности и согласие будут добавлены перед запуском.</p>
           </div>
+
+          <details class="requisites">
+            <summary>Реквизиты ИП</summary>
+            <dl class="requisites-list">
+              <div><dt>Наименование</dt><dd>Индивидуальный предприниматель Питчук Марьяна Ярославовна</dd></div>
+              <div><dt>ИНН</dt><dd>503233971935</dd></div>
+              <div><dt>Расчетный счет</dt><dd>40802810120000514980</dd></div>
+              <div><dt>Банк</dt><dd>ООО «Банк Точка»</dd></div>
+              <div><dt>БИК</dt><dd>044525104</dd></div>
+              <div><dt>Корреспондентский счет</dt><dd>30101810745374525104</dd></div>
+            </dl>
+          </details>
         </div>
 
         <figure class="map-panel" aria-labelledby="map-title map-caption">

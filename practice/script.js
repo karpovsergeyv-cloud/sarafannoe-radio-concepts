@@ -58,16 +58,6 @@
     });
   });
 
-  const channelFeedback = document.querySelector("[data-channel-feedback]");
-  document.querySelectorAll("[data-pending-channel]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const channel = button.dataset.pendingChannel;
-      if (!channelFeedback) return;
-      channelFeedback.textContent = `${channel}. Ссылка ожидает подтверждения.`;
-      channelFeedback.classList.add("is-pending");
-    });
-  });
-
   const form = document.querySelector("[data-request-form]");
   const phoneInput = document.querySelector("#request-phone");
 

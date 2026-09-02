@@ -7,24 +7,24 @@
   <title>Сарафанное радио | Два desktop-прототипа</title>
   <link rel="icon" href="data:,">
   <style>
-    :root { color-scheme: light; --paper: #f4f1e8; --white: #fffdf8; --ink: #202720; --green: #073f35; --line: rgba(7, 63, 53, .22); }
+    :root { color-scheme: light; --paper: #f4ebdd; --white: #fffdf8; --ink: #2d211c; --chocolate: #4a2e24; --line: rgba(74, 46, 36, .22); }
     * { box-sizing: border-box; }
     body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Segoe UI", sans-serif; }
     main { width: min(1440px, calc(100% - 48px)); margin: 0 auto; padding: 64px 0 80px; }
     header { display: grid; grid-template-columns: 1fr minmax(280px, 520px); gap: 48px; align-items: end; margin-bottom: 44px; }
     h1 { max-width: 12ch; margin: 0; font-family: Georgia, serif; font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 400; line-height: .98; }
-    header p { max-width: 52ch; margin: 0; color: #505b54; font-size: 1rem; line-height: 1.65; }
+    header p { max-width: 52ch; margin: 0; color: #695b52; font-size: 1rem; line-height: 1.65; }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
     article { border: 1px solid var(--line); background: var(--white); }
     figure { height: 390px; margin: 0; overflow: hidden; border-bottom: 1px solid var(--line); }
     img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
     .copy { display: grid; gap: 14px; padding: 28px; }
     h2 { margin: 0; font-family: Georgia, serif; font-size: 2rem; font-weight: 400; }
-    .copy p { min-height: 3.2em; margin: 0; color: #59635d; line-height: 1.6; }
-    a { width: fit-content; padding: 14px 19px; color: var(--white); background: var(--green); font-weight: 650; text-decoration: none; }
-    a:hover { background: #0e5949; }
-    a:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; box-shadow: 0 0 0 6px var(--green); }
-    footer { margin-top: 34px; color: #59635d; font-size: .9rem; }
+    .copy p { min-height: 3.2em; margin: 0; color: #695b52; line-height: 1.6; }
+    a { width: fit-content; padding: 14px 19px; color: var(--white); background: var(--chocolate); font-weight: 650; text-decoration: none; }
+    a:hover { background: #2d1b16; }
+    a:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; box-shadow: 0 0 0 6px var(--chocolate); }
+    footer { margin-top: 34px; color: #695b52; font-size: .9rem; }
     @media (max-width: 860px) { header, .grid { grid-template-columns: 1fr; } figure { height: 48vw; min-height: 260px; } }
   </style>
 </head>
@@ -39,7 +39,7 @@
         <figure><img src="review/classic-hero.png" alt="Первый экран варианта Сдержанная классика"></figure>
         <div class="copy">
           <h2>Сдержанная классика</h2>
-          <p>Больше воздуха, тонкие линии, спокойная мозаика и мягкая редакционная подача.</p>
+          <p>Светлее и камернее: больше слоновой кости, тонкие шоколадные линии и мягкая редакционная подача.</p>
           <a href="classic/">Открыть полный лендинг</a>
         </div>
       </article>
@@ -47,7 +47,7 @@
         <figure><img src="review/practice-hero.png" alt="Первый экран варианта Практика доверия"></figure>
         <div class="copy">
           <h2>Практика доверия</h2>
-          <p>Контрастнее ритм, глубокие изумрудные поля и композиция редакционного разворота.</p>
+          <p>Собраннее и контрастнее: крупные шоколадные поля и композиция редакционного разворота.</p>
           <a href="practice/">Открыть полный лендинг</a>
         </div>
       </article>

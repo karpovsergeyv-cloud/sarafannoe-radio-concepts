@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 128" role="img" aria-labelledby="title desc">
+  <title id="title">Сорока — знак агентства «Сарафанное радио»</title>
+  <desc id="desc">Минималистичная сорока с длинным ступенчатым хвостом и светлыми пятнами на крыле и брюшке.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#3A261F" d="M132 67c-36 9-74 24-119 45 35-10 71-17 112-21L77 116c43-10 79-17 109-20l-19-31-35 2Z"/>
+    <path fill="#3A261F" d="M125 69c0-23 9-42 27-53 17-11 39-9 52 5 7 7 10 15 11 24 2 22-8 42-26 53-17 10-38 8-51-5-8-8-13-16-13-24Z"/>
+    <path fill="#3A261F" d="m207 31 41 10-40 11c-4-8-4-14-1-21Z"/>
+    <path fill="#F3EBDD" d="M146 70c8-16 20-27 37-31 9 15 7 29-5 42-10 11-23 15-38 11-1-7 1-14 6-22Z"/>
+    <path fill="#F3EBDD" d="M174 84c8-8 14-19 18-32 5 16 4 29-4 39-7 9-16 13-27 12 5-8 9-14 13-19Z"/>
+    <path fill="#A77A3E" d="M207 31 248 41l-37 5c2-5 1-10-4-15Z"/>
+    <circle cx="194" cy="27" r="3.2" fill="#A77A3E"/>
+    <circle cx="194" cy="27" r="1.2" fill="#F3EBDD"/>
+    <path stroke="#3A261F" stroke-linecap="round" stroke-width="4" d="m151 94-5 23m29-20 2 20"/>
+    <path stroke="#3A261F" stroke-linecap="round" stroke-width="3" d="M132 119h17l7 4m7-4h17l7 4"/>
+  </g>
+</svg>
