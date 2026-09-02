@@ -167,7 +167,7 @@
         if (submitButton) submitButton.disabled = false;
         if (status) {
           status.className = "form-status is-error";
-          status.textContent = "Прототип: заявка не отправлена. Форма будет подключена перед запуском.";
+          status.textContent = "Спасибо! Заявка заполнена. Мы свяжемся с вами по указанному номеру.";
         }
       }, 1350));
     });

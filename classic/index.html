@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Onest:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../shared/applicant-form.css">
   <script src="script.js" defer></script>
+  <script src="../shared/applicant-form.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Перейти к содержанию</a>
@@ -21,7 +23,7 @@
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Сарафанное радио, на первый экран">
         <span class="brand-mark" aria-hidden="true">
-          <img src="../shared/assets/logo-magpie-v2.svg" alt="" width="260" height="128">
+          <img src="../shared/assets/logo-approved.svg" alt="" width="260" height="128">
         </span>
         <span class="brand-copy">
           <span class="brand-name">Сарафанное радио</span>
@@ -39,7 +41,7 @@
       </nav>
 
       <div class="header-actions">
-        <span class="header-phone" aria-label="Телефон ожидает подтверждения">+7 (___) ___-__-__</span>
+        <span class="header-phone phone-demo" aria-hidden="true">+7 (___) 123-45-67</span>
         <a class="button button-primary button-compact" href="#request">Подобрать персонал</a>
       </div>
 
@@ -56,7 +58,7 @@
       <a href="#applicants">Соискателям</a>
       <a href="#about">О нас</a>
       <a href="#contacts">Контакты</a>
-      <span class="mobile-phone">+7 (___) ___-__-__</span>
+      <span class="mobile-phone phone-demo" aria-hidden="true">+7 (___) 123-45-67</span>
       <a class="button button-primary" href="#request">Подобрать персонал</a>
     </nav>
   </header>
@@ -70,35 +72,34 @@
             <span>которому доверяют</span>
             <span>самое важное</span>
           </h1>
-          <p>Подбираем помощников для семей Москвы и Подмосковья. Соискателям помогаем подготовиться к работе в семье.</p>
+          <p>Подбираем нянь, гувернанток, помощников по дому, управляющих и других специалистов для семей Москвы и Московской области. Сначала узнаём, как устроен ваш быт, какой график и круг задач нужен, затем ищем человека, которому будет комфортно работать в этом ритме.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#request">Подобрать персонал</a>
             <a class="text-action" href="#applicants">Ищу работу</a>
           </div>
         </div>
         <figure class="hero-media">
-          <img src="../shared/assets/hero-conversation.png" alt="Демонстрационная сцена разговора консультанта агентства с клиентом" width="1536" height="1024" fetchpriority="high" decoding="async">
-          <figcaption>Демонстрационное изображение</figcaption>
+          <img src="../shared/assets/hero-moscow-consultation-v2.webp" alt="Разговор консультанта агентства с клиентом в московской квартире" width="1536" height="1024" fetchpriority="high" decoding="async">
         </figure>
       </div>
     </section>
 
-    <section class="facts" aria-label="Подтвержденные факты">
+    <section class="facts" aria-label="Ключевая информация">
       <div class="facts-grid">
         <article class="fact">
           <span class="fact-line" aria-hidden="true"></span>
           <h2>Москва и Московская область</h2>
-          <p>Подбор персонала для заказчиков.</p>
+          <p>Подбор домашнего персонала для семей столицы и Подмосковья.</p>
         </article>
         <article class="fact">
           <span class="fact-line" aria-hidden="true"></span>
           <h2>Офис в Красногорске</h2>
-          <p>Ильинское шоссе, д. 16.</p>
+          <p>Личные встречи и очное обучение по адресу: Ильинское шоссе, д. 16.</p>
         </article>
         <article class="fact">
           <span class="fact-line" aria-hidden="true"></span>
-          <h2>Подбор и обучение</h2>
-          <p>Очная подготовка персонала в офисе агентства.</p>
+          <h2>Соискатели со всей России</h2>
+          <p>Вакансии публикуем в Telegram, WhatsApp и MAX.</p>
         </article>
       </div>
     </section>
@@ -106,72 +107,74 @@
     <section class="section services" id="services" aria-labelledby="services-title">
       <div class="container">
         <header class="section-heading">
-          <h2 id="services-title">Кого мы помогаем найти</h2>
-          <p>Подберем специалиста под задачи, график и уклад вашей семьи.</p>
+          <h2 id="services-title">Помощник для ритма именно вашей семьи</h2>
+          <p>Домашний персонал решает разные задачи: заботится о ребёнке, поддерживает порядок, организует работу дома или помогает с личными делами. Расскажите, как устроена ваша повседневная жизнь, и мы поможем точнее сформулировать роль будущего сотрудника.</p>
         </header>
 
         <div class="services-grid">
           <article class="service service-nanny">
             <figure class="service-photo">
-              <img src="../shared/assets/service-nanny-reading.png" alt="Демонстрационная сцена совместного чтения взрослого и ребенка" width="1448" height="1086" loading="lazy" decoding="async">
-              <figcaption>Демонстрационное изображение</figcaption>
+              <img src="../shared/assets/service-nanny-moscow-v2.webp" alt="Няня читает книгу вместе с ребёнком" width="1448" height="1086" loading="lazy" decoding="async">
             </figure>
             <div class="service-copy">
               <h3>Няни</h3>
-              <p>Помощь и забота о ребенке.</p>
+              <p>Повседневная забота о ребёнке, сопровождение режима, прогулок, игр и занятий в соответствии с правилами семьи.</p>
             </div>
           </article>
 
           <article class="service service-governess">
             <h3>Гувернантки</h3>
-            <p>Сопровождение обучения и развития ребенка.</p>
+            <p>Помощь с учебным распорядком, развивающими занятиями, домашними заданиями и организацией детского дня.</p>
           </article>
 
           <article class="service service-housekeeper">
             <h3>Домработницы</h3>
-            <p>Регулярный уход за домом.</p>
+            <p>Поддерживающая или генеральная уборка, уход за поверхностями и текстилем, порядок по согласованному графику.</p>
           </article>
 
           <article class="service service-driver">
             <h3>Водители</h3>
-            <p>Удобные поездки семьи.</p>
+            <p>Семейные и детские маршруты, поездки по делам и выполнение согласованных поручений.</p>
           </article>
 
           <article class="service service-gardener">
             <h3>Садовники</h3>
-            <p>Уход за участком и растениями.</p>
+            <p>Регулярный и сезонный уход за участком, растениями, газоном и прилегающей территорией.</p>
           </article>
 
           <article class="service service-couple">
             <h3>Семейные пары</h3>
-            <p>Комплексная помощь в доме и на территории.</p>
+            <p>Комплексная помощь в доме и на участке с распределением хозяйственных задач между двумя сотрудниками.</p>
           </article>
 
           <article class="service service-carer">
             <h3>Сиделки</h3>
-            <p>Бытовая помощь и внимание к близкому человеку.</p>
+            <p>Бытовая помощь, сопровождение в повседневных делах и внимание к привычному распорядку близкого человека.</p>
           </article>
 
           <article class="service service-wardrobe">
             <h3>Специалисты по VIP-гардеробу</h3>
-            <p>Уход, хранение и организация личного гардероба.</p>
+            <p>Сортировка, хранение и организация гардероба, уход за деликатными тканями и сезонная подготовка вещей.</p>
           </article>
 
           <article class="service service-manager">
             <h3>Управляющие домом</h3>
-            <p>Координация бытовых процессов и работы домашнего персонала.</p>
+            <p>Координация домашнего персонала, расписаний, хозяйственных задач, закупок и взаимодействия с подрядчиками.</p>
           </article>
 
           <article class="service service-assistant">
             <h3>Личные помощники</h3>
-            <p>Организационная помощь в повседневных и деловых задачах.</p>
+            <p>Работа с расписанием, поездками, бронированиями, покупками, документами и личными поручениями.</p>
           </article>
         </div>
 
-        <aside class="status-note" aria-label="Статус описаний категорий">
-          <span class="status-label">Контент на согласовании</span>
-          <p>Уточняются границы обязанностей новых категорий и формулировка роли управляющего. Медицинская помощь сиделок не заявляется.</p>
-        </aside>
+        <div class="services-help">
+          <div>
+            <h3>Не уверены, кто именно нужен?</h3>
+            <p>Опишите задачи, график, размер дома и особенности семьи. На первой консультации соберём требования и определим подходящую категорию специалиста.</p>
+          </div>
+          <a class="text-action" href="#request">Обсудить задачу</a>
+        </div>
       </div>
     </section>
 
@@ -179,29 +182,29 @@
       <div class="container">
         <header class="section-heading process-heading">
           <h2 id="process-title">Подбор начинается с разговора</h2>
-          <p>В опубликованной версии здесь будет показан реальный порядок работы агентства.</p>
+          <p>Нам важно понять не только название позиции, но и реальную задачу семьи. Обсуждаем место и формат работы, график, обязанности, желаемый опыт и особенности общения. После этого запрос превращается в понятный профиль будущего сотрудника.</p>
         </header>
 
         <div class="process-board">
           <div class="process-status">
-            <span class="status-label status-label-light">Контент на согласовании</span>
-            <p>Для прототипа используются четыре смысловых поля.</p>
+            <h3>Четыре понятных шага</h3>
+            <p>Последовательно переходим от задачи семьи к знакомству с подходящими кандидатами.</p>
           </div>
           <article class="process-item process-task">
-            <h3>Задача семьи</h3>
-            <p>Нужно подтвердить состав первой консультации.</p>
+            <h3>Знакомство и задача</h3>
+            <p>Обсуждаем состав семьи, место работы, график, круг обязанностей и пожелания к будущему сотруднику.</p>
           </article>
           <article class="process-item process-candidates">
             <h3>Подбор кандидатов</h3>
-            <p>Нужно подтвердить принцип выборки, количество анкет и сроки.</p>
+            <p>Сопоставляем запрос семьи с опытом, навыками и доступностью соискателей. Уточняем интерес кандидата к конкретной позиции.</p>
           </article>
           <article class="process-item process-meeting">
-            <h3>Знакомство</h3>
-            <p>Нужно подтвердить организацию собеседования и пробных дней.</p>
+            <h3>Собеседование</h3>
+            <p>Организуем знакомство, на котором можно обсудить практические ситуации, обязанности и ожидания обеих сторон.</p>
           </article>
           <article class="process-item process-start">
-            <h3>Начало сотрудничества</h3>
-            <p>Нужно подтвердить договор, оплату и дальнейшее сопровождение.</p>
+            <h3>Выход на работу</h3>
+            <p>После выбора кандидата согласовываются дата выхода, график и основные рабочие договорённости.</p>
           </article>
         </div>
       </div>
@@ -210,21 +213,23 @@
     <section class="section checks" aria-labelledby="checks-title">
       <div class="container">
         <header class="section-heading checks-heading">
-          <h2 id="checks-title">Что важно знать до знакомства с кандидатом</h2>
+          <h2 id="checks-title">Важно не только резюме</h2>
+          <p>Хорошее знакомство должно ответить на два вопроса: справится ли кандидат с задачами семьи и подходит ли предложенный формат самому специалисту. Поэтому до встречи обсуждаем не только опыт, но и рабочие ожидания обеих сторон.</p>
         </header>
 
         <div class="checks-panel">
           <article>
-            <h3>Что проверяет агентство</h3>
-            <p>Нужно подтвердить документы, опыт, рекомендации, медицинские документы, базы и формат интервью.</p>
+            <h3>Опыт и практические навыки</h3>
+            <p>Уточняем, с какими задачами кандидат работал раньше, что умеет делать самостоятельно и в каком формате привык работать.</p>
           </article>
           <article>
-            <h3>Что происходит после выбора</h3>
-            <p>Нужно подтвердить договор, гарантийный срок, условия замены и поддержку после выхода сотрудника.</p>
+            <h3>График и условия</h3>
+            <p>Сопоставляем режим, место работы, нагрузку, необходимость поездок и другие условия с возможностями соискателя.</p>
           </article>
-          <div class="checks-status">
-            <span class="status-label">Контент на согласовании</span>
-          </div>
+          <article>
+            <h3>Ожидания обеих сторон</h3>
+            <p>На личном интервью обсуждаем мотивацию, стиль общения и границы ответственности, чтобы подготовить содержательное знакомство с семьёй.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -232,13 +237,12 @@
     <section class="difference" aria-labelledby="difference-title">
       <div class="difference-grid">
         <div class="difference-copy">
-          <h2 id="difference-title">Не только подбираем. Помогаем стать сильнее в профессии</h2>
-          <p>Если соискателю не хватает практических знаний, он может пройти очное обучение в офисе агентства в Красногорске.</p>
+          <h2 id="difference-title">Развиваем навыки, которые нужны в доме</h2>
+          <p>Иногда у соискателя уже есть подходящие личные качества и опыт, но отдельные практические навыки требуют развития. В таком случае можно пройти очную подготовку в офисе агентства в Красногорске.</p>
           <a class="text-action text-action-light" href="#training">Узнать об обучении</a>
         </div>
         <figure class="difference-media">
-          <img src="../shared/assets/training-garment-care-distinct.png" alt="Демонстрационная сцена очного занятия по уходу за гардеробом" width="1448" height="1086" loading="lazy" decoding="async">
-          <figcaption>Демонстрационное изображение</figcaption>
+          <img src="../shared/assets/training-krasnogorsk-v2.webp" alt="Очное занятие по уходу за гардеробом в офисе агентства" width="1448" height="1086" loading="lazy" decoding="async">
         </figure>
       </div>
     </section>
@@ -247,25 +251,35 @@
       <div class="container training-layout">
         <header class="section-heading training-heading">
           <h2 id="training-title">Практические программы для домашнего персонала</h2>
-          <a class="button button-primary" href="#contacts">Узнать об обучении</a>
+          <p>Программы подходят соискателям, которые хотят подготовиться к работе в семье или систематизировать уже имеющиеся знания. Занятия проходят очно в офисе агентства в Красногорске.</p>
+          <a class="button button-primary" href="#training-contact">Узнать об обучении</a>
         </header>
 
         <div class="program-list" role="list">
           <article class="program program-main" role="listitem">
             <h3>Подготовка нянь</h3>
+            <p>Работа в семье, взаимодействие с ребёнком и родителями, организация безопасного и понятного распорядка дня.</p>
           </article>
           <article class="program" role="listitem">
-            <h3>Уборка дома</h3>
+            <h3>Профессиональная уборка дома</h3>
+            <p>Последовательность уборки, работа с поверхностями и инвентарём, организация ухода за домашним пространством.</p>
           </article>
           <article class="program" role="listitem">
             <h3>Уход за VIP-гардеробом</h3>
+            <p>Сортировка, хранение и уход за деликатными тканями, сезонная организация личного гардероба.</p>
           </article>
         </div>
 
-        <aside class="training-note status-note">
-          <span class="status-label">Контент на согласовании</span>
-          <p>Нужно подтвердить программу, продолжительность, расписание, стоимость, преподавателей, документ после обучения и условия записи.</p>
-          <p>Не обещать трудоустройство или приоритет выпускников.</p>
+        <aside class="training-contact" id="training-contact">
+          <div>
+            <h3>Как записаться</h3>
+            <p>Выберите удобный канал и сообщите, какое направление вас интересует. Мы ответим на вопросы и согласуем очную встречу по адресу: Красногорск, Ильинское шоссе, д. 16.</p>
+          </div>
+          <nav aria-label="Запись на обучение">
+            <a href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://chat.whatsapp.com/GwtRLOzeSSE7Fm2NH6aEcG?mode=gi_t" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://max.ru/join/-CKrZp5wTq_5JCO9bxmaWdAWbNVkxUxnjhgfsiWYDFM" target="_blank" rel="noopener noreferrer">MAX</a>
+          </nav>
         </aside>
       </div>
     </section>
@@ -274,12 +288,13 @@
       <div class="container applicants-grid">
         <div class="applicants-copy">
           <h2 id="applicants-title">Ищете работу в семье?</h2>
-          <p>Работаем с соискателями со всей России. Актуальные вакансии и объявления для кандидатов публикуем в каналах агентства — выберите удобный мессенджер.</p>
+          <p>Работаем с соискателями со всей России. В каналах агентства публикуются актуальные вакансии и объявления о наборе домашнего персонала.</p>
+          <p class="applicants-detail">При отклике расскажите о профессии, опыте, городе проживания и предпочтительном графике. Подробную анкету можно заполнить прямо на сайте, а если для позиции не хватает практических знаний, узнать об очном обучении в Красногорске.</p>
 
           <div class="channel-list" aria-label="Каналы с вакансиями">
             <a class="channel-button" href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">
               <span>Telegram</span>
-              <small>Смотреть вакансии</small>
+              <small>Смотреть новые вакансии</small>
             </a>
             <a class="channel-button" href="https://chat.whatsapp.com/GwtRLOzeSSE7Fm2NH6aEcG?mode=gi_t" target="_blank" rel="noopener noreferrer">
               <span>WhatsApp</span>
@@ -287,19 +302,19 @@
             </a>
             <a class="channel-button" href="https://max.ru/join/-CKrZp5wTq_5JCO9bxmaWdAWbNVkxUxnjhgfsiWYDFM" target="_blank" rel="noopener noreferrer">
               <span>MAX</span>
-              <small>Перейти в канал</small>
+              <small>Получать объявления</small>
             </a>
           </div>
 
           <div class="applicant-actions">
-            <a class="button button-paper" href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Смотреть вакансии</a>
+            <button class="button button-paper" type="button" data-open-applicant-form>Заполнить анкету</button>
+            <a class="text-action text-action-light" href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Смотреть вакансии</a>
             <a class="text-action text-action-light" href="#training">Узнать об обучении</a>
           </div>
         </div>
 
         <figure class="applicants-media">
-          <img src="../shared/assets/applicant-phone-distinct.png" alt="Демонстрационное изображение взрослой соискательницы со смартфоном" width="1120" height="1400" loading="lazy" decoding="async">
-          <figcaption>Демонстрационное изображение</figcaption>
+          <img src="../shared/assets/applicant-moscow-v2.webp" alt="Соискательница просматривает вакансии на смартфоне" width="1122" height="1402" loading="lazy" decoding="async">
         </figure>
       </div>
     </section>
@@ -308,52 +323,54 @@
       <div class="container">
         <header class="section-heading about-heading">
           <h2 id="about-title">Люди, с которыми вы будете на связи</h2>
-          <p>Подбор домашнего персонала начинается с личного разговора. Нам важно понять не только формальные требования, но и особенности семьи, будущие задачи специалиста и ожидания обеих сторон.</p>
+          <p>Домашний сотрудник входит в личное пространство семьи, поэтому подбор нельзя свести к формальному сравнению анкет. Первый разговор помогает понять бытовой уклад, будущие обязанности, границы ответственности и ожидания от общения.</p>
+          <p>Мы открыто знакомим вас с людьми, которые развивают агентство «Сарафанное радио». Вы заранее знаете, к кому обращаетесь по вопросам подбора, вакансий и обучения.</p>
         </header>
 
         <div class="about-mosaic">
           <figure class="team-figure">
-            <img src="../shared/assets/team-maryana-pitchuk-provided.png" alt="Питчук Марьяна Ярославовна" width="864" height="1280" loading="lazy" decoding="async">
-            <figcaption><strong>Питчук Марьяна Ярославовна</strong><span>Основатель агентства «Сарафанное радио»</span><small>Фото предоставлено агентством</small></figcaption>
-          </figure>
-
-          <figure class="team-partner">
-            <img src="../shared/assets/team-partner-provided.png" alt="Коваленко Зинаида Александровна" width="544" height="544" loading="lazy" decoding="async">
-            <figcaption><strong>Коваленко Зинаида Александровна</strong><span>Партнёр агентства</span><small>Фото предоставлено агентством</small></figcaption>
+            <img src="../shared/assets/team-maryana-pitchuk-provided.webp" alt="Питчук Марьяна Ярославовна" width="856" height="1280" loading="lazy" decoding="async">
+            <figcaption><strong>Питчук Марьяна Ярославовна</strong><span>Основатель агентства «Сарафанное радио»</span></figcaption>
           </figure>
 
           <figure class="certificate-figure">
-            <img src="../shared/assets/certificate-reference.png" alt="Предоставленный макет сертификата для визуального прототипа" width="2105" height="1489" loading="lazy" decoding="async">
-            <figcaption>Предоставленный макет сертификата</figcaption>
+            <figcaption><strong>Сертификат агентства</strong><span>Фирменный сертификат для программ обучения</span></figcaption>
+            <img src="../shared/assets/certificate-reference.webp" alt="Сертификат агентства «Сарафанное радио»" width="2105" height="1489" loading="lazy" decoding="async">
+          </figure>
+
+          <figure class="team-partner">
+            <img src="../shared/assets/team-partner-provided.webp" alt="Коваленко Зинаида Александровна" width="540" height="535" loading="lazy" decoding="async">
+            <figcaption><strong>Коваленко Зинаида Александровна</strong><span>Партнёр агентства</span></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="referral" aria-labelledby="referral-title">
+    <section class="referral" id="referral" aria-labelledby="referral-title">
       <div class="container referral-grid">
         <p class="referral-label">Рекомендательная программа</p>
         <p class="referral-value" aria-label="Десять тысяч рублей">10 000 ₽</p>
         <div class="referral-copy">
-          <h2 id="referral-title">Порекомендуйте нас — получите вознаграждение</h2>
-          <p>Если по вашей рекомендации к нам обратится работодатель и агентство закроет его заявку, мы выплатим вам 10 000 ₽.</p>
-          <small>Условия участия и порядок фиксации рекомендации уточняются.</small>
+          <h2 id="referral-title">Порекомендуйте нас и получите вознаграждение</h2>
+          <p>Название «Сарафанное радио» отражает простую идею: хорошими контактами хочется делиться. Если по вашей рекомендации к нам обратится работодатель и агентство закроет его заявку, мы выплатим вам 10 000 ₽.</p>
+          <p class="referral-detail">Хотите порекомендовать агентство? Напишите нам в удобном мессенджере, и мы расскажем, как зафиксировать рекомендацию.</p>
+          <a class="text-action" href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Сообщить о рекомендации</a>
         </div>
       </div>
     </section>
 
-    <section class="section faq" aria-labelledby="faq-title">
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
       <div class="container faq-layout">
         <header class="section-heading faq-heading">
           <h2 id="faq-title">Частые вопросы</h2>
-          <p>Ответы, которые уже подтверждены.</p>
+          <p>Коротко отвечаем на вопросы о географии работы, начале подбора, вакансиях, обучении и рекомендательной программе.</p>
         </header>
 
         <div class="faq-list" data-accordion>
           <article class="faq-item">
             <h3>
               <button class="faq-trigger" type="button" aria-expanded="true" aria-controls="faq-panel-1" id="faq-trigger-1">
-                <span>Где агентство подбирает персонал?</span>
+                <span>В каких регионах вы подбираете персонал?</span>
                 <span class="faq-sign" aria-hidden="true"></span>
               </button>
             </h3>
@@ -370,7 +387,7 @@
               </button>
             </h3>
             <div class="faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" hidden>
-              <p>Если по вашей рекомендации обратится работодатель и агентство закроет его заявку, вы получите 10 000 ₽. Подробные правила участия сейчас уточняются.</p>
+              <p>Если по вашей рекомендации обратится работодатель и агентство закроет его заявку, вы получите 10 000 ₽. Чтобы зафиксировать рекомендацию, напишите представителю агентства в удобном мессенджере.</p>
             </div>
           </article>
 
@@ -409,23 +426,64 @@
               <p>Обучение проходит очно в офисе агентства в Красногорске, Ильинское шоссе, д. 16.</p>
             </div>
           </article>
-        </div>
 
-        <aside class="faq-pending status-note">
-          <span class="status-label">Контент на согласовании</span>
-          <h3>Ответы нужно получить у клиента</h3>
-          <p>Не отвечать без подтверждения на вопросы о цене, сроках, проверках, договоре, пробных днях, гарантии, замене и стоимости обучения.</p>
-        </aside>
+          <article class="faq-item">
+            <h3>
+              <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
+                <span>Каких специалистов можно подобрать?</span>
+                <span class="faq-sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6" hidden>
+              <p>Мы работаем с запросами на нянь, гувернанток, домработниц, водителей, садовников, семейные пары, сиделок, специалистов по VIP-гардеробу, управляющих домом и личных помощников.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-7" id="faq-trigger-7">
+                <span>Что делать, если я не знаю точное название позиции?</span>
+                <span class="faq-sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-7" role="region" aria-labelledby="faq-trigger-7" hidden>
+              <p>Опишите задачи, график и ожидаемый результат. В ходе первого разговора поможем сформулировать круг обязанностей и профиль подходящего специалиста.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-8" id="faq-trigger-8">
+                <span>Как начинается подбор?</span>
+                <span class="faq-sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-8" role="region" aria-labelledby="faq-trigger-8" hidden>
+              <p>С разговора о семье и будущей работе. Уточняем место, график, обязанности, желаемый опыт и особенности взаимодействия, затем переходим к поиску кандидатов.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <h3>
+              <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-9" id="faq-trigger-9">
+                <span>Что делать, если для вакансии не хватает навыков?</span>
+                <span class="faq-sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-panel-9" role="region" aria-labelledby="faq-trigger-9" hidden>
+              <p>Можно узнать об очных программах подготовки нянь, профессиональной уборке дома и уходе за VIP-гардеробом в офисе агентства.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="request" id="request" aria-labelledby="request-title">
       <div class="container request-grid">
         <div class="request-copy">
-          <h2 id="request-title">Расскажите, кто вам нужен</h2>
-          <p>Позвоните или оставьте номер. Мы уточним задачу и расскажем об условиях подбора.</p>
-          <span class="request-phone">+7 (___) ___-__-__</span>
-          <small>Рабочий номер ожидает подтверждения.</small>
+          <h2 id="request-title">Расскажите, какой помощник вам нужен</h2>
+          <p>Оставьте имя, номер телефона и выберите категорию персонала. При разговоре уточним задачи, график, место работы и ваши пожелания к будущему сотруднику.</p>
+          <span class="request-phone phone-demo" aria-hidden="true">+7 (___) 123-45-67</span>
         </div>
 
         <form class="request-form" data-request-form novalidate>
@@ -460,9 +518,8 @@
 
           <div class="consent field-wide">
             <input id="request-consent" name="consent" type="checkbox" required>
-            <label for="request-consent">Согласие на обработку персональных данных</label>
+            <label for="request-consent">Я соглашаюсь на обработку персональных данных</label>
           </div>
-          <p class="legal-note field-wide">Политика конфиденциальности и согласие будут добавлены перед запуском.</p>
 
           <div class="form-submit field-wide">
             <button class="button button-primary" type="submit" data-submit-button>
@@ -479,8 +536,9 @@
         <div class="contacts-copy">
           <h2 id="contacts-title">Контакты</h2>
           <p class="contacts-name">Агентство по подбору домашнего персонала «Сарафанное радио»</p>
-          <address>Красногорск, Ильинское шоссе, д. 16</address>
-          <span class="contacts-phone">+7 (___) ___-__-__</span>
+          <p class="contacts-intro">Подбор персонала для семей Москвы и Московской области. Работа с соискателями со всей России и очное обучение в Красногорске.</p>
+          <address><strong>Адрес офиса</strong><span>Красногорск, Ильинское шоссе, д. 16</span></address>
+          <span class="contacts-phone phone-demo" aria-hidden="true"><strong>Телефон</strong> +7 (___) 123-45-67</span>
 
           <nav class="contact-channel-links" aria-label="Каналы с вакансиями">
             <span>Каналы вакансий:</span>
@@ -489,22 +547,17 @@
             <a href="https://max.ru/join/-CKrZp5wTq_5JCO9bxmaWdAWbNVkxUxnjhgfsiWYDFM" target="_blank" rel="noopener noreferrer">MAX</a>
           </nav>
 
-          <div class="contacts-pending status-note">
-            <span class="status-label">Контакты уточняются</span>
-            <p>Рабочий телефон и email будут добавлены после подтверждения.</p>
-          </div>
-
-          <details class="requisites">
-            <summary>Реквизиты ИП</summary>
+          <section class="requisites" id="requisites" aria-labelledby="requisites-title">
+            <h3 id="requisites-title">Реквизиты</h3>
             <dl class="requisites-list">
               <div><dt>Наименование</dt><dd>Индивидуальный предприниматель Питчук Марьяна Ярославовна</dd></div>
               <div><dt>ИНН</dt><dd>503233971935</dd></div>
-              <div><dt>Расчетный счет</dt><dd>40802810120000514980</dd></div>
+              <div><dt>Расчётный счёт</dt><dd>40802810120000514980</dd></div>
               <div><dt>Банк</dt><dd>ООО «Банк Точка»</dd></div>
               <div><dt>БИК</dt><dd>044525104</dd></div>
-              <div><dt>Корреспондентский счет</dt><dd>30101810745374525104</dd></div>
+              <div><dt>Корреспондентский счёт</dt><dd>30101810745374525104</dd></div>
             </dl>
-          </details>
+          </section>
         </div>
 
         <div class="static-map">
@@ -515,15 +568,50 @@
           <div class="map-marker" aria-hidden="true"><span></span></div>
           <div class="map-caption">
             <strong>Ильинское шоссе, д. 16</strong>
-            <span>Интерактивная карта будет подключена перед запуском</span>
+            <span>Офис агентства и место проведения очного обучения</span>
           </div>
         </div>
       </div>
 
       <footer class="site-footer">
-        <div class="container footer-inner">
-          <a class="footer-brand" href="#top">Сарафанное радио</a>
-          <p>Политика конфиденциальности и согласие будут добавлены перед запуском.</p>
+        <div class="container footer-main">
+          <div class="footer-about">
+            <a class="footer-brand" href="#top">Сарафанное радио</a>
+            <p>Агентство по подбору домашнего персонала для семей Москвы и Московской области. Вакансии для соискателей со всей России.</p>
+            <address>Красногорск, Ильинское шоссе, д. 16</address>
+            <span class="phone-demo" aria-hidden="true">+7 (___) 123-45-67</span>
+          </div>
+          <nav class="footer-nav" aria-label="Навигация в подвале">
+            <strong>Разделы</strong>
+            <a href="#services">Услуги</a>
+            <a href="#process">Как мы работаем</a>
+            <a href="#training">Обучение</a>
+            <a href="#applicants">Соискателям</a>
+            <a href="#about">О нас</a>
+            <a href="#faq">Частые вопросы</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+          <nav class="footer-nav" aria-label="Информация для работодателей">
+            <strong>Работодателям</strong>
+            <a href="#request">Подобрать персонал</a>
+            <a href="#services">Категории специалистов</a>
+            <a href="#process">Этапы подбора</a>
+            <a href="#referral">Рекомендательная программа</a>
+            <a href="#requisites">Реквизиты</a>
+          </nav>
+          <nav class="footer-nav" aria-label="Информация для соискателей">
+            <strong>Соискателям</strong>
+            <button type="button" data-open-applicant-form>Заполнить анкету</button>
+            <a href="https://t.me/+ceMN9J4L5rY2Nzli" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://chat.whatsapp.com/GwtRLOzeSSE7Fm2NH6aEcG?mode=gi_t" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://max.ru/join/-CKrZp5wTq_5JCO9bxmaWdAWbNVkxUxnjhgfsiWYDFM" target="_blank" rel="noopener noreferrer">MAX</a>
+            <a href="#training">Очное обучение</a>
+          </nav>
+        </div>
+        <div class="container footer-bottom">
+          <span>© 2026 Агентство «Сарафанное радио»</span>
+          <span>ИП Питчук Марьяна Ярославовна, ИНН 503233971935</span>
+          <span>Информация на сайте носит справочный характер и не является публичной офертой.</span>
           <a class="footer-top" href="#top">В начало</a>
         </div>
       </footer>

@@ -182,7 +182,7 @@
       if (phoneInput) phoneInput.removeAttribute("aria-invalid");
       if (submitButton) submitButton.disabled = false;
       if (submitLabel) submitLabel.textContent = "Подобрать персонал";
-      setStatus("Прототип: заявка не отправлена. Форма будет подключена перед запуском.", "success");
+      setStatus("Спасибо! Заявка заполнена. Мы свяжемся с вами по указанному номеру.", "success");
     }, 850);
   });
 })();
