@@ -21,8 +21,11 @@
     .copy { display: grid; gap: 14px; padding: 28px; }
     h2 { margin: 0; font-family: Georgia, serif; font-size: 2rem; font-weight: 400; }
     .copy p { min-height: 3.2em; margin: 0; color: #695b52; line-height: 1.6; }
-    a { width: fit-content; padding: 14px 19px; color: var(--white); background: var(--chocolate); font-weight: 650; text-decoration: none; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    a { width: fit-content; padding: 14px 19px; color: var(--white); background: var(--chocolate); border: 1px solid var(--chocolate); font-weight: 650; text-decoration: none; }
+    a.secondary { color: var(--chocolate); background: transparent; }
     a:hover { background: #2d1b16; }
+    a.secondary:hover { color: var(--white); }
     a:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; box-shadow: 0 0 0 6px var(--chocolate); }
     footer { margin-top: 34px; color: #695b52; font-size: .9rem; }
     @media (max-width: 860px) { header, .grid { grid-template-columns: 1fr; } figure { height: 48vw; min-height: 260px; } }
@@ -40,7 +43,10 @@
         <div class="copy">
           <h2>Сдержанная классика</h2>
           <p>Светлее и камернее: больше слоновой кости, тонкие шоколадные линии и мягкая редакционная подача.</p>
-          <a href="classic/">Смотреть вариант</a>
+          <div class="actions">
+            <a class="secondary" href="classic/">Версия 1 · статичная</a>
+            <a href="classic-motion/">Версия 2 · плавная динамика</a>
+          </div>
         </div>
       </article>
       <article>
